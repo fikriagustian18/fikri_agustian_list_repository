@@ -25,7 +25,7 @@ function List_repository() {
         <div>
             <header>
                 <h1>
-                    Aplikasi pencari repository 
+                    Aplikasi Menampilkan repository 
                     <a href="//github.com"> GitHub</a>
                 </h1>
             </header>
