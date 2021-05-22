@@ -1,0 +1,75 @@
+header{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+h1{
+    color:#111;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+p{
+    color: #111;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+a{
+    text-decoration: none;
+    padding:12px 24px !important;
+    width: auto;
+    border: none;
+    outline: none;
+    white-space:normal;
+    color: #685206;
+}
+
+label{
+    color: #111;
+    padding: 8px;
+}
+input{
+    width: 100%;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #685206;
+    border-radius: 4px;
+}
+input[type=submit]{
+    background-color: #685206;
+    border: none;
+    color: #f1f1f1;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+li{
+    list-style-type: circle;
+}
+.form{
+    width: 300px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+.list-reposiroty{
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #f1f1f1;
+    text-transform: capitalize;
+}
+.list-reposiroty:hover{
+    border: 2px solid #685206;
+}

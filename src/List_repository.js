@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
+import './style.css';
 
 function List_repository() {
     const [result, setResult] = useState([]);
@@ -22,16 +23,17 @@ function List_repository() {
   
     return (
         <div>
-            <header className="App-header">
+            <header>
                 <h1>
                     Aplikasi pencari repository 
-                    <a href="//github.com">GitHub</a>
+                    <a href="//github.com"> GitHub</a>
                 </h1>
             </header>
-            <div>
+            <div class="form">
                 <div>
                     <label for="username">Input Username : </label>
                     <input 
+                        type="text"
                         placeholder="input Username"
                         id="username"
                         onChange={(e) => setUser(e.target.value)}
@@ -47,8 +49,9 @@ function List_repository() {
                     />
                 </div>
             </div>
-            <div>
+            <div class="list-reposiroty">
                 <p>List repository for {user || "..."}</p>
+                <ul>
                 {
                     result.length > 0 ? (result?.map((item) => (
                         <li>{item.name} : <a href={item.html_url}>{item.html_url}</a></li>
@@ -64,6 +67,7 @@ function List_repository() {
                         
                         </>
                     )}
+                </ul>
             </div>
       </div>
     );
